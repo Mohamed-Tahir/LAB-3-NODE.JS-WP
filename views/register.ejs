@@ -1,0 +1,40 @@
+<%- include('header'); -%> 
+
+<div class="content">
+    <form action="/api/register" method="post">
+
+        <label for="username">Create Your Username:</label>
+        <input type="text" id="username" name="username"><br><br>
+
+        <label for="password">Create Your Password:</label>
+        <input type="password" id="password" name="passwsord"><br><br>
+
+        <label for="society">Enter The Name of Your Society:</label>
+        <input type="text" id="society" name="society"><br><br>
+
+        <label for="contact">Enter Your Full Name:</label>
+        <input type="text" id="contact" name="contact"><br><br>
+
+        <label for="addres">Enter Your Address:</label>
+        <input type="text" id="addres" name="addres"><br><br>
+
+        <label for="zipcode">Enter Your Zip Code:</label>
+        <input type="text" id="zipcode" name="zipcode"><br><br>
+
+        <label for="city">Enter Your City:</label>
+        <input type="text" id="city" name="city"><br><br>
+
+        <label for="phone">Enter Your Phone Number:</label>
+        <input type="number" id="phone" name="phone"><br><br>
+
+        <label for="fax">Enter Your Fax Number:</label>
+        <input type="number" id="fax" name="fax"><br><br>
+
+        <label for="max_outstanding">Enter Your Max Outstanding Amount:</label>
+        <input type="number" id="max_outstanding" name="max_outstanding"><br><br>
+
+        <input type="submit" value="Submit">
+      </form>
+</div>
+
+<%- include('footer'); -%>

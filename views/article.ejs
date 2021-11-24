@@ -1,0 +1,65 @@
+<%- include('header'); -%>
+
+    <div class="content">
+        <h1>Selected article</h1>
+        <table id="catalog">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th scope="col">Reference</th>
+                    <th scope="col">Category</th>
+                    <th scope="col">Supplier</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">VAT</th>
+                    <th scope="col">Stock</th>
+                    <th scope="col">Critical Stock</th>
+                </tr>
+            </thead>
+            <tbody>
+               
+                    <tr>
+                         <th scope="row">
+                            <%= products.name %>
+                        </th>
+
+                        <td>
+                            
+                            <%= products.reference %>
+                        
+                        </td>
+
+                        <td>
+                            <%= products.category %>
+                        </td>
+                        
+                        
+                        
+                        <td>
+                            <%= products.price %>AED
+                        </td>
+                        
+                        <td>
+                            <%= products.supplier %>
+                        </td>
+                        
+                        <td>
+                            <%= products.vat %>AED
+                        </td>
+                        
+                        <td>
+                            <%= products.stock %>
+                        </td>
+                        
+                        <td>
+                            <%= products.critical_stock %>AED
+                        </td>
+                        
+                    </tr>
+                    
+            </tbody>
+        </table>
+    </div>
+    <br>
+        
+    <%- include('footer'); -%>
+
