@@ -23,7 +23,7 @@ const loginControl = (request, response) => {
                     //add to session
                     request.session.user = username;
                     request.session.num_client = client[0].num_client;
-                    if (username == "Admin" && password == "urmom"){
+                    if (username == "Admins" && password == "ADMIN"){
                         request.session.admin = true;
                         response.render('AdminLogIn', {id:username})
                     } 
